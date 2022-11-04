@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import '../styles/banner.css';
-import logoAlone from '../assets/logoAlone.png';
 import { accountService } from '../_services/account.service';
 
 const Banner = () => {
@@ -12,15 +11,16 @@ const Banner = () => {
 
     return (
         <div className='banniere'>
-            <img src={logoAlone} alt="Logo Groupomania sans le nom du groupe" />
-            <ul>
-                <NavLink to='/post'>
+            <NavLink to='/post'>
+                <ul>
                     <li>Publications</li>
-                </NavLink>
-                <NavLink to='/'>
+                </ul>
+            </NavLink>
+            <NavLink to='/'>
+                <ul>
                     <li onClick={(logout)}>Me déconnecter</li>
-                </NavLink>
-            </ul>
+                </ul>
+            </NavLink>
         </div>
     );
 };

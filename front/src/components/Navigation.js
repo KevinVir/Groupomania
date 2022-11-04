@@ -5,14 +5,16 @@ import '../styles/navigation.css';
 const Navigation = () => {
     return (
         <div className='navigation'>
-            <ul>
-                <NavLink to='/' end className={({ isActive }) => (isActive ? 'active-nav' : '')}>
+            <NavLink to='/' end className={({ isActive }) => (isActive ? 'active-nav' : '')}>
+                <ul>
                     <li>Connexion</li>
-                </NavLink>
-                <NavLink to='/inscription' className={({ isActive }) => (isActive ? 'active-nav' : '')}>
+                </ul>
+            </NavLink>
+            <NavLink to='/inscription' className={({ isActive }) => (isActive ? 'active-nav' : '')}>
+                <ul>
                     <li>Inscription</li>
-                </NavLink>
-            </ul>
+                </ul>
+            </NavLink>
         </div>
     );
 };

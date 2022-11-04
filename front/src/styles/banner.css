@@ -4,6 +4,7 @@
     width: 100%;
     height: 100px;
     display: flex;
+    align-items: center;
 }
 
 .banniere img {
@@ -13,22 +14,17 @@
 
 .banniere ul {
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 0;
-    width: 500px;
-    align-items: center;
-    margin: 0 0 0 50px;
+    padding-left: 0px;
 }
-
 .banniere li {
     color: white;
+    margin-left: 50px;
 }
 
 .banniere li:hover {
-    background-color: #FFD7D7;
-    border: 1px solid #FFD7D7;
-    padding: 40px 0 39px 0;
+    background-color: #FD2D01;
+    border: 1px solid #FD2D01;
+    padding: 40px 0 40px 0;
     transition: 0.7s;
     color: black;
 }

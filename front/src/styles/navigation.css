@@ -1,12 +1,14 @@
+.navigation {
+  display: flex;
+}
+
 .navigation ul {
     padding-left: 0;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 50ox;
     justify-content: space-around;
     list-style-type: none;
-    width: 450px;
+    width: 100%;
   }
   
   .navigation li {
@@ -33,11 +35,4 @@
     color: black;
     background-color: #FFD7D7;
     opacity: 1;
-  }
-
-  @media screen and (max-width: 700px)
-  {
-    .navigation ul {
-      width: 400px;
-    }
   }

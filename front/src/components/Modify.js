@@ -58,17 +58,19 @@ const Modify = ({ post }) => {
                 <div className='Modify'>
                     <form onSubmit={onSubmit}>
                         <div className='postModify'>
-                            <textarea name="post" id="post" cols="30" rows="10" maxLength='1500'
+                            <label htmlFor="post-text"></label>
+                            <textarea name="post-text" id="post-text" cols="30" rows="10" maxLength='1500'
                                 value={publication}
                                 onChange={(e) => setPublication(e.target.value)}
                             >
                             </textarea>
                         </div>
                         <div className='btn-modify'>
-                            <label htmlFor="file"></label>
-                            <input className='input-file' id='file' type="file" accept="image/*"
-                                onChange={(e) => setImage(e.target.files[0], e.target.files[0].name)}
-                            />
+                            <label htmlFor="file-img">
+                                <input className='input-file' id='file-img' type="file" accept="image/*"
+                                    onChange={(e) => setImage(e.target.files[0], e.target.files[0].name)}
+                                />
+                            </label>
                             <button className="btn-post btn-modifier">MODIFIER</button>
                         </div>
                     </form>

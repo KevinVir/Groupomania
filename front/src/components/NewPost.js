@@ -43,10 +43,11 @@ const Post = () => {
                 </div>
             </div>
             <div className="file-btn-publication">
-                <label htmlFor="file"></label>
-                <input className='input-file' id='file' type="file" accept="image/*"
-                    onChange={(e) => setImage(e.target.files[0], e.target.files[0].name)}
-                />
+                <label htmlFor="file-img">
+                    <input className='input-file' id='file-img' type="file" accept="image/*" aria-label='file-img'
+                        onChange={(e) => setImage(e.target.files[0], e.target.files[0].name)}
+                    />
+                </label>
                 <button className="btn-post">PUBLIER</button>
             </div>
         </form >
