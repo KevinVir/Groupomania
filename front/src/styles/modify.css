@@ -1,0 +1,53 @@
+.Modify {
+    width: 70%;
+    margin: auto;
+}
+
+.postModify {
+    margin-top: 50px;
+    min-height: 100px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 3px #FFD7D7 solid;
+    box-shadow: 6px -2px 14px 8px rgb(143 143 143 / 46%);
+    border-radius: 7px;
+}
+
+.postModify textarea {
+    border: 5px white solid;
+    width: 90%;
+    font-weight: bold;
+    border-radius: 7px 30px 2px 7px;
+    height: 100px;
+    resize: none;
+}
+
+.btn-modify {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn-modifier {
+    width: 100px;
+}
+
+@media screen and (max-width: 700px)
+{
+
+.postModify textarea {
+    width: 88%;
+}
+
+    .btn-modify{
+        justify-content: center;
+    }
+    .btn-modifier {
+        border-radius: 0px;
+    }
+}

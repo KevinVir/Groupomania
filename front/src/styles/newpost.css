@@ -1,0 +1,70 @@
+.bloc-post {
+    height: 400px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.bloc-post form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 244px;
+    background-color: #FFD7D7;
+    border: 2px solid #FFD7D7;
+    border-radius: 7px;
+}
+
+.publication {
+    width: 90%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.profilPicture {
+    height: 50px;
+    width: 50px;
+}
+
+.top-bloc{
+    display: flex;
+}
+
+.profilPicture img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.publication textarea {
+    border: 5px white solid;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 7px 30px 2px 7px;
+    height: 100px;
+    resize: none;
+}
+
+.publication textarea:focus {
+    border-color: #4E5166;
+}
+
+.file-btn-publication {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 89.5%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .file-btn-publication input {
+    display: none;
+} */

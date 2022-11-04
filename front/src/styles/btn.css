@@ -1,0 +1,49 @@
+/* Class btn de base utilisé pour la page connexion est inscription */
+
+.btn {
+    background-color: #4E5166;
+    box-shadow: 0 200px 100px -120px #FD2D01 inset;
+    transition: box-shadow 1s;
+    border: none;
+    color: #000000;
+    padding: 15px;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    background-color: #FD2D01;
+    color: #FFFFFF;
+    box-shadow: 0 200px 100px -120px #4E5166 inset;
+  }
+
+/* Class btn-post pour diminuer celui de base mais reprendre le même style */
+
+  .btn-post {
+    background-color: #4E5166;
+    box-shadow: 0 200px 100px -120px #FD2D01 inset;
+    transition: box-shadow 1s;
+    border: none;
+    color: #000000;
+    padding: 15px;
+    width: 100px;
+    margin-top: 15px;
+    border-radius: 7px 2px 30px 7px ;
+}
+
+.btn-post:hover {
+  cursor: pointer;
+  background-color: #FD2D01;
+  color: #FFFFFF;
+  box-shadow: 0 200px 100px -120px #4E5166 inset;
+
+}
+
+.btn-trash {
+  border: none;
+  background-color: white;
+}

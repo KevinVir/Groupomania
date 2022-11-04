@@ -1,0 +1,21 @@
+.lastRegister {
+    height: 244px;
+    background-color: #FFD7D7;
+    border: 2px solid #FFD7D7;
+    width: 220px;
+    border-radius: 7px;
+}
+
+.lastRegister h4 {
+    text-align: center;
+}
+
+.suggestions {
+    border: 2px #4E5166 solid;
+    border-radius: 20px;
+    background-color: white;
+    width: 80%;
+    height: 50px;
+    margin: auto;
+
+}
