@@ -24,7 +24,7 @@ exports.createPost = async (req, res, next) => {
 
     // On enregistre les infos reçus dans la database avec save
     await post.save()
-        .then(() => res.status(201).json({ message: 'Post enregistrée !' }))
+        .then(() => res.status(201).json({ message: 'Post enregistrée !', post }))
         .catch((error) => res.status(400).json({ erreurCreation: error }))
 };
 

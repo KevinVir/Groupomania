@@ -17,6 +17,7 @@ const PostDetails = () => {
     useEffect(() => {
         axios.get(`http://localhost:3000/api/posts/${id}`)
             .then((res) => {
+                console.log(res.data)
                 setPost(res.data.post)
                 setUsers(res.data.users)
             })

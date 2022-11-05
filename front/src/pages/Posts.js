@@ -5,15 +5,12 @@ import Post from '../components/Post';
 import axios from 'axios';
 
 const Posts = () => {
-    const [users, setUsers] = useState([]);
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
         axios.get(`http://localhost:3000/api/posts`)
-            .then((res) => {
-                setPosts(res.data)
-                setUsers(res.data.user)
-                console.log(res.data.user)
+            .then((posts) => {
+                setPosts(posts.data)
             })
     }, [])
 
@@ -24,7 +21,7 @@ const Posts = () => {
                 <NewPost setPosts={setPosts} posts={posts} />
             </section>
             <section className='bloc-newpost'>
-                {posts.map((post, index) => (<Post key={index} posts={posts} users={users} setPosts={setPosts} post={post} />))}
+                {posts.map((post, index) => (<Post key={index} posts={posts} setPosts={setPosts} post={post} />))}
             </section>
         </div>
     );

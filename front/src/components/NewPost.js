@@ -4,7 +4,7 @@ import '../styles/newpost.css';
 import axios from 'axios';
 
 
-const Post = () => {
+const Post = ({ setPosts }) => {
 
     const [publication, setPublication] = useState('');
     const [image, setImage] = useState();
@@ -24,9 +24,11 @@ const Post = () => {
 
         axios.post(`http://localhost:3000/api/posts`, data)
             .then((res) => {
-                console.log(res)
-                document.location.reload()
                 alert(res.data.message)
+                axios.get(`http://localhost:3000/api/posts`)
+                    .then((posts) => {
+                        setPosts(posts.data)
+                    })
             })
             .catch((error) => console.log('erreur: ' + error))
     }
