@@ -44,6 +44,7 @@ const Modify = ({ post, posts, setPosts }) => {
             axios.put(`http://localhost:3000/api/posts/${id}`, data)
                 .then((res) => {
                     alert(res.data.message)
+                    document.location.reload()
                 })
                 .catch((error) => console.log('erreur: ' + error))
         }

@@ -9,7 +9,7 @@ const Post = ({ setPosts }) => {
     const [publication, setPublication] = useState('');
     const [image, setImage] = useState();
 
-    const onSubmit = async (e) => {
+    const onSubmit = (e) => {
         e.preventDefault();
 
         const userId = localStorage.getItem('userId')
