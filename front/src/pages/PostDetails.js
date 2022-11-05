@@ -17,12 +17,18 @@ const PostDetails = () => {
     useEffect(() => {
         axios.get(`http://localhost:3000/api/posts/${id}`)
             .then((res) => {
-                console.log(res.data)
                 setPost(res.data.post)
                 setUsers(res.data.users)
             })
             .catch((error) => console.log("erreur: " + error))
     }, [id])
+
+    useEffect(() => {
+        axios.get(`http://localhost:3000/api/posts`)
+            .then((posts) => {
+                setPosts(posts.data)
+            })
+    }, [])
 
     return (
         <>

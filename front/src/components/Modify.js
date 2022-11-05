@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import '../styles/modify.css';
 
-const Modify = ({ post }) => {
+const Modify = ({ post, posts, setPosts }) => {
 
     const { id } = useParams();
 
@@ -43,9 +43,7 @@ const Modify = ({ post }) => {
 
             axios.put(`http://localhost:3000/api/posts/${id}`, data)
                 .then((res) => {
-                    console.log(res)
-                    window.location.reload();
-                    alert('Votre publication a bien été modifiée')
+                    alert(res.data.message)
                 })
                 .catch((error) => console.log('erreur: ' + error))
         }
