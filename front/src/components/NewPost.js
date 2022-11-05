@@ -25,6 +25,7 @@ const Post = ({ setPosts }) => {
         axios.post(`http://localhost:3000/api/posts`, data)
             .then((res) => {
                 alert(res.data.message)
+                // On récupère tous les posts avec la route get (églament le post qu'on vient de créer), et on met à jour le state avec les nouvelles données
                 axios.get(`http://localhost:3000/api/posts`)
                     .then((posts) => {
                         setPosts(posts.data)
